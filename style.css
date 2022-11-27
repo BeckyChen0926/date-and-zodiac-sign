@@ -1,0 +1,107 @@
+main{
+    margin-left: 2em;
+    margin-top: .5em;
+    overflow: hidden;
+}
+
+/* The three blocks that will either be in colums or rows*/
+.content-forflex{
+    display: inline-block;
+    width:30%; 
+    padding:1.5em;
+    margin-top: 1em;
+    vertical-align: top;
+    padding-bottom: 100%;
+    margin-bottom: -90%;
+}
+
+/*This is the div for body text to keep them from jamming up 
+the border*/
+figure+div{
+    margin: 0.3em;
+}
+
+.pic-size{
+    width: 80%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+figure{
+    border:2px solid silver;
+    padding:0em;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position:relative;
+}
+
+figcaption{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    background-color: rgb(255,255,0); /*backup color if can't do transparent*/
+    background-color: rgba(255,255,0,.5);
+    position:absolute;
+    top:2em;
+    right:10%;
+}
+
+#sci{
+    background-color: rgb(112, 140, 231);
+}
+
+#lulu{
+    background-color: rgb(244, 151, 229);
+}
+
+#lib{
+    background-color: rgb(150, 96, 186);
+}
+
+/*for narrow screens*/
+@media screen and (min-width:0px) {
+    .content-all{
+        display:flex;
+        flex-direction: column;
+    }
+    .content-forflex{
+        flex: 1 0 auto;
+        width: 85%;
+    }
+}
+
+
+
+/*for wider screens*/
+@media screen and (min-width:768px) {
+    .content-all{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly; /*to maintain the white space between each colored block*/
+    }
+    .content-forflex{
+        flex: 0 1 auto;
+        justify-content: space-between;
+        overflow-x: auto;
+        margin-right: 1em;
+    }
+}
+
+#top{
+    background-color: white;
+}
+
+#top div{
+    display: inline-block;
+    flex-direction: column;
+}
+
+#picture{
+    padding-right: 3em;;
+}
+
+
+
+
+

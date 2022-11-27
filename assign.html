@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name=author content="Jiahui and Becky">
+    <title>Zodiac Assignment</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>Wellesley College</h1>
+    </header>
+    <div id="top">
+        <div>
+            <output aria-live="polite"><img id="picture" src="zodiac-images/libra.png" alt="image of the zodiac sign according to date"></output>
+        </div>
+        <div>
+            <p>Today is <output aria-live="polite"><span id="aDay">Date</span></output>. 
+                Your zodic sign is <output aria-live="polite"><span id="yourSign">Sign</span></output>.</p>
+            <button id="updateButton">Update Page</button>
+        </div>
+    </div>
+    <div class="content-all">
+        <section id="sci" class="content-forflex">
+            <h3>The Science Center</h3>
+            <figure>
+                <img src="images/SCI.jpg" alt="a picture of wellesley science center" class="pic-size">
+                <figcaption>Our freshly renovated SCI with students!</figcaption>
+            </figure>
+            <div>
+                <p>Here are a few fun facts about The Science Center:</p>
+                <ul>
+                    <li>Where STEM classes reside</li>
+                    <li>Home of the Leaky Beaker</li>
+                    <li>Houses 14 of the science departments and programs offered at Wellesley</li>
+                </ul>
+            </div>
+        </section>
+        <section id="lulu" class="content-forflex">
+            <h3>Lulu Chow Wang Campus Center</h3>
+            <figure>
+                <img src="images/LULU.jpg" alt="a picture of wellesley campus center LULU" class="pic-size">
+                <figcaption>Lulu at night</figcaption>
+            </figure>
+            <p>Here are a few fun facts about Lulu:</p>
+            <ul>
+                <li>Named after Lulu Chow Wang who was the 2016 commencement speaker</li>
+                <li>Contains the Bae Pao Lu Chow Dining Room</li>
+                <li>Has a Starbucks on the first floor</li>
+            </ul>
+        </section>
+        <section id="lib" class="content-forflex">
+            <h3>Clapp Library</h3>
+            <figure>
+                <img src="images/LIB.jpg" alt="a picture of wellesley clapp library" class="pic-size">
+                <figcaption>Clapp library in the spring season in wonderful</figcaption>
+            </figure>
+            <p>Here are a few fun facts about the Library:</p>
+            <ul>
+                <li>Named after Wellesley Alum, Betsy Knapp</li>
+                <li>Built in 1909</li>
+                <li>contains over a million volumes</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<!-- JavaScript at the bottom -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cs.wellesley.edu/~anderson/js/bounds/bounds-plugin.js"></script>
+<script src="zodiac.js"></script>
+
+
+</body>
+</html>
